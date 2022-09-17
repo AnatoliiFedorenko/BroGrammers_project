@@ -41,8 +41,8 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   outline: 2px solid tomato;
 
   @media screen and (min-width: $mobile) {
@@ -51,10 +51,16 @@ img {
 
   @media screen and (min-width: $tablet) {
     width: 768px;
+
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @media screen and (min-width: $desktop) {
     width: 1240px;
+
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
