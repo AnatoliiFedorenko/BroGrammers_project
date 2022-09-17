@@ -1,0 +1,16 @@
+%button {
+  margin: 0 auto;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 11px 22px;
+  min-width: 103px;
+
+  color: var(--primary-text-color);
+
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.53;
+  display: flex;
+}

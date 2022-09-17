@@ -1,0 +1,59 @@
+:root {
+  --primary-text-color: #2c2c2c;
+  --primary-white-color: #fefefe;
+  --button-green: #bbf330;
+  --yellow-main: #ffe550;
+  --dark-green: #597d00;
+
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page {
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+
+  @media screen and (min-width: $mobile) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1240px;
+  }
+}
