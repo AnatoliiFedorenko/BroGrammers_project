@@ -1,15 +1,15 @@
-@import './breakpoints';
-@import './tools';
+@import './utils/breakpoints';
+@import './utils/tools';
 
-@import './buttons';
-@import './isHidden';
-@import './subscribe';
-@import './title';
+@import './components/buttons';
+@import './components/isHidden';
+@import './components/subscribe';
+@import './components/title';
 
-@import './header';
-@import './hero';
-@import './offerings';
-@import './favorites';
-@import './castomersSay';
-@import './subscribe';
-@import './footer';
+@import './sections/header';
+@import './sections/hero';
+@import './sections/offerings';
+@import './sections/favorites';
+@import './sections/castomersSay';
+@import './sections/subscribe';
+@import './sections/footer';
