@@ -24,13 +24,18 @@
 .menu__item {
   padding-top: 28px;
   padding-bottom: 28px;
-  &:not(:first-of-type) {
-    padding-left: 14px;
-  }
-  &:not(:last-of-type) {
-    padding-right: 14px;
-  }
+  // &:not(:first-of-type) {
+  //   padding-left: 14px;
+  // }
+  // &:not(:last-of-type) {
+  //   padding-right: 14px;
+  // }
 }
+
+.menu__item + .menu__item {
+  margin-left: 28px;
+}
+
 .menu__link {
   text-decoration: none;
   @include font-size(400, 14px, 1.14);
@@ -52,7 +57,7 @@
   background-color: var(--button-green);
   border: none;
   border-radius: 30px;
-  padding: 0;
+  // padding: 0;
 
   &:hover,
   &:focus {
