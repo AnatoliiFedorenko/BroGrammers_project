@@ -37,13 +37,16 @@ img {
 .link {
   text-decoration: none;
 }
-
+button {
+  padding: 0;
+  margin: 0;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  outline: 2px solid tomato;
+  // outline: 2px solid tomato;
 
   @media screen and (min-width: $mobile) {
     width: 320px;
@@ -59,8 +62,8 @@ img {
   @media screen and (min-width: $desktop) {
     width: 1240px;
 
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
