@@ -1,0 +1,140 @@
+.header {
+  background-color: var(--primary-white-color);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+.logo__link {
+  width: 66px;
+  height: 52px;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  margin-right: 30px;
+  @media screen and(max-width: $tablet) {
+    display: none;
+  }
+}
+.menu__item {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  // &:not(:first-of-type) {
+  //   padding-left: 14px;
+  // }
+  // &:not(:last-of-type) {
+  //   padding-right: 14px;
+  // }
+}
+
+.menu__item + .menu__item {
+  margin-left: 28px;
+}
+
+.menu__link {
+  text-decoration: none;
+  @include font-size(400, 14px, 1.14);
+  color: inherit;
+  .menu__item:hover &,
+  .menu__item:focus & {
+    color: var(--button-green);
+    text-decoration: underline;
+  }
+
+  transition: color 250ms var(--cubic), text-decoration 250ms var(--cubic);
+}
+
+.button__order {
+  display: block;
+  width: 98px;
+  height: 32px;
+  color: var(--primary-text-color);
+  background-color: var(--button-green);
+  border: none;
+  border-radius: 30px;
+  // padding: 0;
+
+  &:hover,
+  &:focus {
+    background-color: #b5ff00;
+  }
+
+  @include font-size(500, 13px, 1.5);
+
+  transition: background-color 250ms var(--cubic);
+
+  @media screen and(max-width: $tablet) {
+    display: none;
+  }
+}
+
+.js-open-menu {
+  background-color: transparent;
+  width: 28px;
+  height: 28px;
+  border: none;
+
+  @media screen and(min-width: $tablet) {
+    display: none;
+  }
+}
+.menu__container {
+  position: relative;
+  left: 51%;
+  top: -22px;
+  width: 130px;
+  background: var(--primary-white-color);
+
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+  border-radius: 30px 0px 30px 30px;
+  overflow: hidden;
+
+  pointer-events: none;
+  transform: rotateY(-90deg);
+  opacity: 0;
+  transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
+  &.is__open {
+    opacity: 1;
+    pointer-events: all;
+    transform: rotateY(0);
+  }
+  @media screen and(min-width: $tablet) {
+    display: none;
+  }
+}
+.button__close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+}
+.mobile-menu__item {
+  list-style: none;
+}
+.mobile-menu__link {
+  text-decoration: none;
+  @include font-size(400, 16px, 1.19);
+  color: inherit;
+  display: block;
+  padding: 16px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: var(--button-green);
+  }
+  transition: background-color 250ms var(--cubic);
+}
+
+*:focus-visible {
+  outline: 2px double var(--button-green);
+  outline-offset: 1.5px;
+}
