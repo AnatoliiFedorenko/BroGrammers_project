@@ -1,5 +1,11 @@
 .subscribe{
- background-color: transparent
+    position: relative;
+    top: -102px;
+    @media screen and (min-width: $tablet) {
+        position: relative;
+        top: -160px;
+       }
+   
 }
 .banan{
     justify-content: center;
@@ -29,6 +35,10 @@
         text-align: start;
     }
 }
+.subcribe-conten{
+justify-content: center;
+display: flex;
+flex-direction: column;}
 .subcribe-conten__text{
     margin-bottom: 40px;
     @extend %title;
@@ -48,21 +58,28 @@
     }
 }
 .form__input{
-    border: 0.854167px solid var(--yellow-main);
-    border-radius: 30px;
-    padding: 12px 11px;
-    width: 100%;
+   
     @media screen and(min-width:$tablet){
         width: 394px;
      }
+     & :hover,
+     & :focus{
+        border: 0.854167px solid #7EB101;
   }
+}
   .form__button{
     display: flex;
     justify-content: end;
     @extend %button;
     background-color: var(--button-green);
-  
+
   }
-  .form__button :focus{
-    background-color: var(--dark-green);
+  .form__input:not(:placeholder-shown):required:invalid {
+    border-color: #FF705D;
   }
+.button-link{
+    text-decoration: none;
+    & :hover,
+  & :focus{
+    background-color:  #B5FF00;}
+}

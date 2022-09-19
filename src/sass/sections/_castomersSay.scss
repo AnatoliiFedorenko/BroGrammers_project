@@ -1,8 +1,32 @@
 .castomerSay{
-  background-position: center;
+    background-image: url(../images/customers-mobile/fon-480.1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  
+  @media screen and(min-width:$tablet){
+    font-size: 42px;
+line-height: 49px;
+background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../images/customers-desctop/fon-desctop1x.png)
+  background-image: url(../images/customers-tablet/fon-tablet1x.png);
+  height: 647px;
+  margin-bottom: 80px;
+  }
+
+  @media screen and(min-width:$desktop){
+    font-size: 42px;
+line-height: 49px;
+background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/customers-desctop/fon-desctop1x.png);
+  height: 647px;
+  margin-bottom: 80px;
+  }
 }
+.castomer{
+  padding-bottom: 60px;
+}
+
 .castomer__title{
     @extend %title;
     text-align: start;
@@ -106,4 +130,4 @@ margin-right: 16px;
     width: 160px;
     display: flex;
     align-items: center;
-    border-right: 1px solid;}
+    border-right: 1px solid #7EB101;}
