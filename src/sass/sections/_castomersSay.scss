@@ -1,0 +1,106 @@
+.castomer__title{
+    @extend %title;
+    text-align: start;
+    color: var(--primary-text-color);
+  @media screen and(min-width:$tablet){
+    font-size: 42px;
+line-height: 49px;
+  }
+ 
+
+}
+.castomer__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;    
+    color: var(--primary-text-color);
+    margin-bottom: 32px;
+    @media screen and(min-width:$tablet){
+        font-size: 16px;
+        line-height: 19px;
+      }
+}
+
+.feedback__rating{
+    margin-bottom: 28px;
+    gap: 4px;
+    display: flex;
+}
+.feedback__text{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--primary-text-color);
+    margin-bottom: 40px;
+    @media screen and(min-width:$tablet){
+    font-size: 18px;
+    line-height: 21px;
+      }
+}
+.feedback__img{
+width: 48px;
+margin-right: 16px;
+}
+
+.feedback__dude-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+}
+.feedback__dude-name{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--primary-text-color);
+}
+
+.feedback__dude-who{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--primary-text-color);
+
+}
+.castomerSay{
+    background-color: yellow;
+}
+.castomer{
+    width: 100%;
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    @media screen and(min-width:$tablet){
+        flex-direction: row;
+        gap: 32px;
+      }
+      @media screen and(min-width:$desktop){
+        justify-content: space-between;
+      }
+    
+}
+
+.feedback__item{
+    background-color: white;
+    border-radius: 0 50px 50px 50px;
+   padding: 8px;
+   @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
+  @media screen and(min-width:$tablet){
+    padding: 12px;
+  }
+  @media screen and(min-width:$desktop){
+    width: 501px;
+    padding: 14px;
+  }
+  
+}
+
+.feedback__dude{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid;}
