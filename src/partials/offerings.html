@@ -1,0 +1,115 @@
+<section class="offerings section">
+  <div class="container offerings__container">
+    <div class="offerings__apple-container">
+      <div class="offerings__apple-block">
+        <picture class="offerings__picture">
+          <source
+            srcset="
+              ./images/apple-mobile/apple-mobile.png    1x,
+              ./images/apple-mobile/apple-mobile@2x.png 2x
+            "
+            media="(max-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/apple-tablet/apple-tablet-1.png    1x,
+              ./images/apple-tablet/apple-tablet-1@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/apple-desktop/apple-desktop.png    1x,
+              ./images/apple-desktop/apple-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <img
+            class="offerings__image"
+            src="./images/apple-mobile/apple-mobile.png"
+            alt="Apple"
+          />
+        </picture>
+      </div>
+      <div class="offerings__apple-block-2">
+        <picture class="offerings__picture-2">
+          <source
+            srcset="
+              ./images/apple-tablet/apple-tablet-2.png    1x,
+              ./images/apple-tablet/apple-tablet-2@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            class="offerings__image-2"
+            src="./images/apple-tablet/apple-tablet-2.png"
+            alt="Apple"
+          />
+        </picture>
+        <picture class="offerings__picture-3">
+          <source
+            srcset="
+              ./images/apple-tablet/apple-tablet-3.png    1x,
+              ./images/apple-tablet/apple-tablet-3@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            class="offerings__image-3"
+            src="./images/apple-tablet/apple-tablet-3.png"
+            alt="Apple"
+          />
+        </picture>
+      </div>
+    </div>
+
+    <div class="offerings__desc-block">
+      <div class="offerings__about">
+        <h2 class="offerings__title">What’s Special About Our Offerings</h2>
+        <p class="offerings__info">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+        </p>
+      </div>
+      <div class="offerings__benefits">
+        <ul class="offerings__list list">
+          <li class="offerings__item">
+            <div class="offerings__icon-block">
+              <svg class="offerings__icon" width="32" height="32">
+                <use href="./images/offerings.svg#icon-rocket"></use>
+              </svg>
+            </div>
+
+            <h3 class="offerings__subtitle">Fasest Delivery</h3>
+            <p class="offerings__subinfo">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros.
+            </p>
+          </li>
+          <li class="offerings__item">
+            <div class="offerings__icon-block">
+              <svg class="offerings__icon" width="32" height="32">
+                <use href="./images/offerings.svg#icon-touch"></use>
+              </svg>
+            </div>
+
+            <h3 class="offerings__subtitle">Easy to order</h3>
+            <p class="offerings__subinfo">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="offerings__buttons">
+        <button class="offerings__order-btn" type="button">Order Now</button>
+        <a class="offerings__detains-link link" href="#"
+          >Read More<svg class="offerings__button-icon" width="14" height="14">
+            <use href="./images/offerings.svg#icon-strelka"></use></svg
+        ></a>
+      </div>
+    </div>
+  </div>
+</section>

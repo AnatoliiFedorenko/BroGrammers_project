@@ -1,0 +1,278 @@
+@mixin flex($jc: center, $ai: center) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin font($fs, $fw, $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: calc($lh/$fs);
+}
+
+.offerings {
+  position: relative;
+
+  padding-bottom: 0;
+  padding-top: 0;
+  @media screen and (min-width: $desktop) {
+    height: 824px;
+  }
+}
+
+.offerings__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url('../images/background-offerings-mobile.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+    background-image: url('../images/background-offerings-tablet.png');
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1240px;
+    height: 100%;
+    background-image: url('../images/background-offerings-desktop.png');
+    background-size: cover;
+    @include flex($jc: space-between, $ai: flex-end);
+    background-size: contain;
+  }
+}
+
+.offerings__apple-container {
+  @include flex($ai: flex-end);
+  padding-top: 40px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 0;
+  }
+}
+
+.offerings__apple-block {
+  position: relative;
+  @include flex;
+  width: 280px;
+  height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 0 12px var(--yellow-main);
+
+  @media screen and (min-width: $tablet) {
+    width: 357px;
+    height: 357px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 100px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 550px;
+    height: 550px;
+    margin-top: 0;
+  }
+
+  &::after {
+    position: absolute;
+    width: 128.29px;
+    height: 44.29px;
+    bottom: 30px;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #2f583f 0%,
+      rgba(105, 105, 105, 0) 100%
+    );
+    filter: blur(6.61818px);
+    content: '';
+
+    @media screen and (min-width: $tablet) {
+      bottom: 45px;
+      width: 163.57px;
+      height: 56.47px;
+      filter: blur(8.43818px);
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 252px;
+      height: 87px;
+      filter: blur(13px);
+    }
+  }
+}
+
+.offerings__picture-2 {
+  display: none;
+  width: 166px;
+  height: 210.42px;
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    display: block;
+  }
+}
+
+.offerings__picture-3 {
+  display: none;
+  width: 108px;
+  height: 136px;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    display: block;
+  }
+}
+
+.offerings__image {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-bottom: 70px;
+  width: 201.6px;
+  height: 255.55px;
+
+  @media screen and (min-width: $tablet) {
+    width: 257.04px;
+    height: 325.84px;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 396px;
+    height: 502px;
+  }
+}
+
+.offerings__apple-block-2 {
+  display: none;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    @include flex($ai: flex-end);
+    column-gap: 44px;
+    margin-bottom: 70px;
+    margin-left: 29px;
+  }
+}
+
+.offerings__desc-block {
+  @include flex($ai: flex-start, $jc: space-between);
+  flex-direction: column;
+  row-gap: 28px;
+
+  @media screen and (min-width: $tablet) {
+    row-gap: 40px;
+  }
+}
+
+.offerings__list {
+  @include flex;
+  flex-direction: column;
+  row-gap: 28px;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    column-gap: 116px;
+  }
+}
+
+.offerings__title {
+  margin-top: 60px;
+  margin-bottom: 28px;
+  color: var(--primary-text-color);
+  @include font(28px, 700, 33px);
+
+  @media screen and (min-width: $tablet) {
+    @include font(42px, 700, 49px);
+    max-width: 526px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include font(42px, 700, 50px);
+  }
+}
+
+.offerings__subtitle {
+  margin-bottom: 16px;
+  color: var(--primary-text-color);
+  @include font(18px, 700, 21px);
+
+  @media screen and (min-width: $desktop) {
+    @include font(18px, 700, 25px);
+  }
+}
+
+.offerings__info {
+  color: var(--primary-text-color);
+  @include font(14px, 400, 16px);
+
+  @media screen and (min-width: $tablet) {
+    @include font(16px, 400, 19px);
+    max-width: 500px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.5;
+  }
+}
+
+.offerings__subinfo {
+  color: var(--primary-text-color);
+  @include font(14px, 400, 16px);
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.5;
+  }
+}
+
+.offerings__item {
+  @media screen and (min-width: $tablet) {
+    max-width: 252px;
+  }
+}
+
+.offerings__icon-block {
+  @include flex;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.offerings__icon {
+  @include flex;
+  fill: #7eb101;
+}
+
+.offerings__buttons {
+  @include flex;
+}
+
+.offerings__order-btn {
+  cursor: pointer;
+  padding: 10px 22px;
+  margin-right: 24px;
+  color: var(--primary-text-color);
+  background: #ffffff;
+  @include font(14px, 500, 20px);
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+  transition: border-color var(--cubic);
+
+  &:hover,
+  &:focus {
+    border-color: #597d00;
+  }
+}
+
+.offerings__detains-link {
+  @include flex;
+  color: var(--primary-text-color);
+  @include font(14px, 500, 20px);
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
