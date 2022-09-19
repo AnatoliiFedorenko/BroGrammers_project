@@ -1,5 +1,5 @@
-.subscribe__conteiner{
-    width: 100%;
+.subscribe{
+ background-color: transparent
 }
 .banan{
     justify-content: center;
@@ -10,18 +10,21 @@
       }
      
 }
-.banan__img{
-    width: 280px;
-}
+
 .subscribe__conteiner{
     @media screen and (min-width: $desktop) {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: flex-end;
        }
 }
 .subcribe-conten__title{
     @extend %title;
     @media screen and(max-width:$tablet){
+        display: flex;
+        text-align: start;
+    }
+    @media screen and(min-width:$tablet){
         display: flex;
         text-align: start;
     }
