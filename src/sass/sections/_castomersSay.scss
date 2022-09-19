@@ -1,3 +1,8 @@
+.castomerSay{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/customers-desctop/fon-desctop1x.png)
+}
 .castomer__title{
     @extend %title;
     text-align: start;
@@ -47,6 +52,8 @@ margin-right: 16px;
     flex-direction: column;
     gap: 2px;
     align-items: flex-start;
+   
+    
 }
 .feedback__dude-name{
     font-weight: 500;
@@ -62,12 +69,8 @@ margin-right: 16px;
     color: var(--primary-text-color);
 
 }
-.castomerSay{
-    background-color: yellow;
-}
-.castomer{
-    width: 100%;
-}
+
+
 .feedback{
     display: flex;
     flex-direction: column;
