@@ -1,9 +1,13 @@
 .subscribe{
     position: relative;
-    top: -102px;
+    top: -130px;
     @media screen and (min-width: $tablet) {
         position: relative;
-        top: -160px;
+        top: -210px;
+       }
+       @media screen and (min-width: $desktop) {
+        position: relative;
+        top: -250px;
        }
    
 }
@@ -57,8 +61,8 @@ flex-direction: column;}
        flex-direction: row;
     }
 }
-.form__input{
-   
+.form  .form__input{
+    border: 0.854167px solid #FFE550;
     @media screen and(min-width:$tablet){
         width: 394px;
      }
@@ -83,3 +87,4 @@ flex-direction: column;}
   & :focus{
     background-color:  #B5FF00;}
 }
+
