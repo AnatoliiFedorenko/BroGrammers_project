@@ -6,6 +6,7 @@
   height: 100%;
   background-color: rgba(94, 99, 99, 0.7);
 
+  z-index: 3;
   opacity: 1;
   overflow-y: scroll;
   transition: opacity 250ms var(--cubic);
