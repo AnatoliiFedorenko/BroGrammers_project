@@ -1,9 +1,20 @@
-
 .castomerSay{
-    background-image: url(../images/customers-mobile/fon-480.1x.png);
+  height: 768px;
+  background-image: url(../images/customers-mobile/fon-480.1x.png);
     background-position: center;
     background-repeat: no-repeat;
-  
+}
+
+
+.castomer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // height: 768px;
+  // background-image: url(../images/customers-mobile/fon-480.1x.png);
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+
   @media screen and(min-width:$tablet){
     font-size: 42px;
 line-height: 49px;
@@ -13,7 +24,7 @@ background-position: center;
   height: 647px;
   margin-bottom: 80px;
   }
-
+  
   @media screen and(min-width:$desktop){
     font-size: 42px;
 line-height: 49px;
@@ -24,9 +35,6 @@ background-position: center;
   margin-bottom: 80px;
   }
 }
-.castomer{
-  padding-bottom: 60px;
-}
 
 .castomer__title{
     @extend %title;
@@ -35,14 +43,6 @@ background-position: center;
   
 
 
-.castomer {
-  background-image: url(../images/customers-desctop/fon-desctop1x.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: -170px;
-  padding-top: 100px;
-  height: 647px;
-}
 
 .castomer__title {
   @extend %title;
@@ -124,7 +124,7 @@ background-position: center;
   border-radius: 0 50px 50px 50px;
   padding: 8px;
   @media screen and (max-width: $tablet) {
-    width: 100%;
+    width: 280px;
   }
   @media screen and(min-width:$tablet) {
     padding: 12px;
