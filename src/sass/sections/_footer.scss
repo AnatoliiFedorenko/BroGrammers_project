@@ -1,0 +1,112 @@
+.footer {
+    background-image: url("../images/mobile-footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 619px;
+    background-position: center;
+}
+
+@media screen and (max-width: 479.98px) {
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .footer {
+            background-image: url("../images/mobile-footer@2x.jpg");
+        }
+    }
+}
+
+.footer__logo {
+    width: 69px;
+    height: 51px;
+}
+
+.footer__nav {
+    position: relative;
+}
+
+.footer__menu {
+    position: absolute;
+    top: 4px;
+    left: 150px;
+    margin-bottom: 40px;
+}
+
+.footer__menu-item {
+    margin-bottom: 20px;
+}
+
+.footer__menu-link {
+    transition: color 250ms var(--cubik);
+    &:hover,
+    &:focus {
+        color: var(--button-green);
+    }
+}
+
+.current {
+    color: var(--button-green);
+    text-decoration: underline;
+}
+
+.subcribe__content {
+    margin-top: 153px;
+    margin-bottom: 60px;
+}
+
+.subcribe__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.subscribe__input {
+    margin-bottom: 20px;
+}
+
+.subscribe__btn {
+    background-color: #FFFFFF;
+    border: 0.854167px solid #7EB101;
+    border-radius: 30px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    transition: background-color 250ms var(--cubik);
+
+    &:hover,
+    &:focus {
+        background-color: var(--yellow-main);
+    }
+}
+
+.subscribe__agreement {
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+.subscribe__link {
+    color: #7EB101;
+}
+
+.additional__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.additional__link {
+    font-size: 10px;
+    line-height: 1.2;
+    color: #7EB101;
+}
+
+.additional__text {
+    font-size: 10px;
+    line-height: 1.2;
+    text-align: center;
+}
