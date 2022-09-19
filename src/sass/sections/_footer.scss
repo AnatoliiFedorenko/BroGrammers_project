@@ -7,7 +7,8 @@
     background-position: center;
     box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
     
-    @media screen and (max-width: 1279.98px) {
+    @media screen and (min-width: $tablet) {
+        width: 768px;
         background-image: url("../images/tablet-footer.jpg");
         width: 785px;
         height: 506px;
@@ -16,10 +17,13 @@
     @media screen and (min-width: $desktop) {
         background-image: none;
         height: 395px;
+        width: 1280px;
+        // margin-right: auto;
+        // margin-left: auto;
     }
 }
 
-@media screen and (max-width: 479.98px) {
+@media screen and (max-width: 677.98px) {
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
@@ -31,7 +35,7 @@
     }
 }
 
-@media screen and (min-width: $mobile) and (max-width: $tablet) {
+@media screen and (min-width: $tablet) and (max-width: 1279.98px) {
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
@@ -54,7 +58,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 37px 0;
-        width: 1211px;
+        // width: 1211px;
         height: 266px;
         
     }
@@ -87,12 +91,16 @@
         flex-direction: row;
         // justify-content: center;
         align-items: center;
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 49px;
+        }
     }
 }
 
 .footer__nav {
 
-    @media screen and (max-width: 479.98px) {
+    @media screen and (max-width: 767.98px) {
         position: relative;
     }
 
@@ -106,7 +114,7 @@
 
 .footer__menu {
     
-@media screen and (max-width: 479.98px) {
+@media screen and (max-width: 767.98px) {
         position: absolute;
         top: 4px;
         left: 150px;
@@ -129,7 +137,6 @@
     }
 }
 
-
 .footer__menu-item {
     margin-bottom: 20px;
 
@@ -151,7 +158,7 @@
     text-decoration: underline;
 }
 
-.subcribe__content {
+.subscribe__content {
     margin-top: 153px;
     margin-bottom: 60px;
 
@@ -168,7 +175,7 @@
     }
 }
 
-.subcribe__title {
+.subscribe__title {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
@@ -179,13 +186,8 @@
     margin-bottom: 20px;
 
     @media screen and (min-width: $tablet) {
-        max-width: 279px;
+        width: 279px;
         margin-bottom: 0;
-    }
-
-    @media screen and (min-width: $desktop) {
-        max-width: 279px;
-        
     }
 }
 
@@ -228,6 +230,8 @@
     line-height: 1.2;
 
     @media screen and (min-width: $tablet) {
+        font-size: 12px;
+        line-height: 1.17;
         margin-top: 12px;
     }
 }
