@@ -1,111 +1,203 @@
-<section class="favorites section">
-    <div class="favorites__container container">
-        <h1 class="favorites__title title">Some of Our Favorites</h1>
-        <p class="favorites__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<section class="favorites section" id="favorites">
+  <div class="favorites__container container">
+    <h1 class="favorites__title title">Some of Our Favorites</h1>
+    <p class="favorites__subtitle">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
 
-        <ul class="favorites__gallery gallery-list list">
-            <li class="gallery-list__item">
-                <a class="gallery-list__link" href="#">
-                    <picture>
-                        <source 
-                        srcset="./images/favorites/mobile-gamburger.jpg 1x, ./images/favorites/mobile-gamburger@2x.jpg 2x" 
-                        type="image/jpeg"
-                        media="(max-width: 767px)" />
-                        <source 
-                        srcset="./images/favorites/tablet-gamburger.jpg 1x, ./images/favorites/tablet-gamburger@2x.jpg 2x" 
-                        type="image/jpeg"
-                        media="(min-width: 768px)" />
-                        <source 
-                        srcset="./images/favorites/desk-gamburger.jpg 1x, ./images/favorites/desk-gamburger@2x.jpg 2x" 
-                        type="image/jpeg"
-                        media="(min-width: 1280px)" />
-                        <img class="gallery-list__photo" src="./images/favorites/mobile-gamburger.jpg" alt="gamburger" width="223">
-                    </picture>
-                </a>
-            </li>
-            <li class="gallery-list__item">
-                <a class="gallery-list__link" href="#">
-                    <picture>
-                        <source 
-                        srcset="./images/favorites/mobile-pasta.jpg 1x, ./images/favorites/mobile-pasta@2x.jpg 2x"
-                        type="image/jpeg" 
-                        media="(max-width: 767px)" />
-                        <source 
-                        srcset="./images/favorites/tablet-pasta.jpg 1x, ./images/favorites/tablet-pasta@2x.jpg 2x"
-                        type="image/jpeg" 
-                        media="(min-width: 768px)" />
-                        <source 
-                        srcset="./images/favorites/desk-pasta.jpg 1x, ./images/favorites/desk-pasta@2x.jpg 2x"
-                        type="image/jpeg" 
-                        media="(min-width: 1280px)" />
-                        <img class="gallery-list__photo" src="./images/favorites/mobile-pasta.jpg" alt="gamburger" width="223">
-                    </picture>
-                </a>
-            </li>
-            <li class="gallery-list__item">
-                <a class="gallery-list__link" href="#">
-                    <picture>
-                        <source 
-                        srcset="./images/favorites/mobile-pizza.jpg 1x, ./images/favorites/mobile-pizza@2x.jpg 2x"
-                        type="image/jpeg" 
-                        media="(max-width: 767px)" />
-                        <source 
-                        srcset="./images/favorites/tablet-pizza.jpg 1x, ./images/favorites/tablet-pizza@2x.jpg 2x"
-                        type="image/jpeg" 
-                        media="(min-width: 768px)" />
-                        <source 
-                        srcset="./images/favorites/desk-pizza.jpg 1x, ./images/favorites/desk-pizza@2x.jpg 2x"
-                        type="image/jpeg" 
-                        media="(min-width: 1280px)" />
-                        <img class="gallery-list__photo" src="./images/favorites/mobile-pizza.jpg" alt="gamburger" width="223">
-                    </picture>
-                </a>
-            </li>
-            <li class="gallery-list__item">
-                <a class="gallery-list__link" href="#">
-                    <picture>
-                        <source 
-                        srcset="./images/favorites/tablet-chicken.jpg 1x, ./images/favorites/tablet-chicken@2x.jpg 2x"
-                        type="image/jpeg" 
-                        media="(min-width: 768px)" />
-                        <source 
-                        srcset="./images/favorites/desk-chicken.jpg 1x, ./images/favorites/desk-chicken@2x.jpg 2x"
-                        type="image/jpeg" 
-                        media="(min-width: 1280px)" />
-                        <img class="gallery-list__photo" src="./images/favorites/tablet-chicken.jpg" alt="gamburger" width="268">
-                    </picture>
-                </a>
-            </li>
-            <li class="gallery-list__item">
-                <a class="gallery-list__link" href="#">
-                    <picture>
-                        <source 
-                        srcset="./images/favorites/tablet-salat.jpg 1x, ./images/favorites/tablet-salat@2x.jpg 2x"
-                        type="image/jpeg" 
-                        media="(min-width: 768px)" />
-                        <source 
-                        srcset="./images/favorites/desk-salat.jpg 1x, ./images/favorites/desk-salat@2x.jpg 2x"
-                        type="image/jpeg" 
-                        media="(min-width: 1280px)" />
-                        <img class="gallery-list__photo" src="./images/favorites/tablet-salat.jpg" alt="gamburger" width="268">
-                    </picture>
-                </a>
-            </li>
-            <li class="gallery-list__item">
-                <a class="gallery-list__link" href="#">
-                    <picture>
-                        <source 
-                        srcset="./images/favorites/tablet-borshch.jpg 1x, ./images/favorites/tablet-borshch@2x.jpg 2x"
-                        type="image/jpeg" 
-                        media="(min-width: 768px)" />
-                        <source 
-                        srcset="./images/favorites/desk-borshch.jpg 1x, ./images/favorites/desk-borshch@2x.jpg 2x"
-                        type="image/jpeg" 
-                        media="(min-width: 1280px)" />
-                        <img class="gallery-list__photo" src="./images/favorites/tablet-borshch.jpg" alt="gamburger" width="268">
-                    </picture>
-                </a>
-            </li>
-        </ul>
-    </div>
+    <ul class="favorites__gallery gallery-list list">
+      <li class="gallery-list__item">
+        <a class="gallery-list__link" href="#">
+          <picture>
+            <source
+              srcset="
+                ./images/favorites/mobile-gamburger.jpg    1x,
+                ./images/favorites/mobile-gamburger@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/favorites/tablet-gamburger.jpg    1x,
+                ./images/favorites/tablet-gamburger@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/favorites/desk-gamburger.jpg    1x,
+                ./images/favorites/desk-gamburger@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+            />
+            <img
+              class="gallery-list__photo"
+              src="./images/favorites/mobile-gamburger.jpg"
+              alt="gamburger"
+              width="223"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="gallery-list__item">
+        <a class="gallery-list__link" href="#">
+          <picture>
+            <source
+              srcset="
+                ./images/favorites/mobile-pasta.jpg    1x,
+                ./images/favorites/mobile-pasta@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/favorites/tablet-pasta.jpg    1x,
+                ./images/favorites/tablet-pasta@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/favorites/desk-pasta.jpg    1x,
+                ./images/favorites/desk-pasta@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+            />
+            <img
+              class="gallery-list__photo"
+              src="./images/favorites/mobile-pasta.jpg"
+              alt="gamburger"
+              width="223"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="gallery-list__item">
+        <a class="gallery-list__link" href="#">
+          <picture>
+            <source
+              srcset="
+                ./images/favorites/mobile-pizza.jpg    1x,
+                ./images/favorites/mobile-pizza@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/favorites/tablet-pizza.jpg    1x,
+                ./images/favorites/tablet-pizza@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/favorites/desk-pizza.jpg    1x,
+                ./images/favorites/desk-pizza@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+            />
+            <img
+              class="gallery-list__photo"
+              src="./images/favorites/mobile-pizza.jpg"
+              alt="gamburger"
+              width="223"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="gallery-list__item">
+        <a class="gallery-list__link" href="#">
+          <picture>
+            <source
+              srcset="
+                ./images/favorites/tablet-chicken.jpg    1x,
+                ./images/favorites/tablet-chicken@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/favorites/desk-chicken.jpg    1x,
+                ./images/favorites/desk-chicken@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+            />
+            <img
+              class="gallery-list__photo"
+              src="./images/favorites/tablet-chicken.jpg"
+              alt="gamburger"
+              width="268"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="gallery-list__item">
+        <a class="gallery-list__link" href="#">
+          <picture>
+            <source
+              srcset="
+                ./images/favorites/tablet-salat.jpg    1x,
+                ./images/favorites/tablet-salat@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/favorites/desk-salat.jpg    1x,
+                ./images/favorites/desk-salat@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+            />
+            <img
+              class="gallery-list__photo"
+              src="./images/favorites/tablet-salat.jpg"
+              alt="gamburger"
+              width="268"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="gallery-list__item">
+        <a class="gallery-list__link" href="#">
+          <picture>
+            <source
+              srcset="
+                ./images/favorites/tablet-borshch.jpg    1x,
+                ./images/favorites/tablet-borshch@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/favorites/desk-borshch.jpg    1x,
+                ./images/favorites/desk-borshch@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+            />
+            <img
+              class="gallery-list__photo"
+              src="./images/favorites/tablet-borshch.jpg"
+              alt="gamburger"
+              width="268"
+            />
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </div>
 </section>
