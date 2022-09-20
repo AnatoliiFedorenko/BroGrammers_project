@@ -10,66 +10,59 @@
         <use href="./images/header-svg.svg#icon-close"></use>
       </svg>
     </button>
-      <h2 class="modal__title">Order Form</h2>
-      <form class="form__modal">
-        <ul class="form__list">
-          <li class="form__item">
-            <label class="form__label" for="name">Name
-           
-              
-        </label>
-        <input
-                class="form__input"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Your name"
-                required 
-                minlength="3"
-                maxlength="25"
-                title="The name must be between 3 and 25 characters"
-              />
-            <span class="form__warning">The name must be between 3 and 25 characters</span>
-          </li>
-          <li class="form__item">
-            <label class="form__label" for="phone">Phone number
-
-            </label>
-                          <input
-                class="form__input"
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="+38(0_ _) _ _ _   _ _   _ _"
-                pattern="[\+][0-9]{12}"
-                required 
-                title="This phone must be in the format +380 99 000 00 00"
-              />
-            <span class="form__warning">This phone must be in the format +380 99 000 00 00</span>
-
-          </li>
-          <li class="form__item">
-            <label class="form__label" for="email">E-mail
-
-            </label>
-                          <input
-                class="form__input"
-                type="email"
-                name="email"
-                id="email"
-                
-                placeholder="example@gmail.com"
-                required 
-                title="Please enter a valid email address"
-              />
-            <span class="form__warning">Please enter a valid email address</span>
-
-          </li>
-        </ul>
-        <button class="form__send" type="submit" aria-label="Send data">
-          Send
-        </button>
-      </form>
-    </button>
+    <h2 class="modal__title">Order Form</h2>
+    <form class="form__modal">
+      <ul class="form__list">
+        <li class="form__item">
+          <label class="form__label" for="name">Name </label>
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name"
+            required
+            minlength="3"
+            maxlength="25"
+            title="The name must be between 3 and 25 characters"
+          />
+          <span class="form__warning"
+            >The name must be between 3 and 25 characters</span
+          >
+        </li>
+        <li class="form__item">
+          <label class="form__label" for="phone">Phone number </label>
+          <input
+            class="form__input"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            pattern="[\+][0-9]{12}"
+            required
+            title="This phone must be in the format +380 99 000 00 00"
+          />
+          <span class="form__warning"
+            >This phone must be in the format +380 99 000 00 00</span
+          >
+        </li>
+        <li class="form__item">
+          <label class="form__label" for="email">E-mail </label>
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@gmail.com"
+            required
+            title="Please enter a valid email address"
+          />
+          <span class="form__warning">Please enter a valid email address</span>
+        </li>
+      </ul>
+      <button class="form__send" type="submit" aria-label="Send data">
+        Send
+      </button>
+    </form>
   </div>
 </div>
