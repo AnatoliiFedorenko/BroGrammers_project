@@ -1,13 +1,51 @@
-// .castomerSay {
-// }
+.castomerSay {
+  @media screen and(max-width:$tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 768px;
+    background-image: url(../images/customers-mobile/fon-480.1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media screen and(min-width:$tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 42px;
+    line-height: 49px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/customers-tablet/fon-tablet1x.png);
+    height: 544px;
+    margin-bottom: 80px;
+  }
+
+  @media screen and(min-width:$desktop) {
+    font-size: 42px;
+    line-height: 49px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/customers-desctop/fon-desctop1x.png);
+    height: 647px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
 
 .castomer {
-  background-image: url(../images/customers-desctop/fon-desctop1x.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: -170px;
-  padding-top: 100px;
-  height: 647px;
+  @media screen and(max-width:$tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.castomer__title {
+  @extend %title;
+  text-align: start;
+  color: var(--primary-text-color);
 }
 
 .castomer__title {
@@ -42,6 +80,9 @@
   line-height: 19px;
   color: var(--primary-text-color);
   margin-bottom: 40px;
+  @media screen and (max-width: 364px) {
+    margin-bottom: 15px;
+  }
   @media screen and(min-width:$tablet) {
     font-size: 18px;
     line-height: 21px;
@@ -75,7 +116,7 @@
 .feedback {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
   @media screen and(min-width:$tablet) {
     flex-direction: row;
     gap: 32px;
@@ -90,7 +131,7 @@
   border-radius: 0 50px 50px 50px;
   padding: 8px;
   @media screen and (max-width: $tablet) {
-    width: 100%;
+    width: 280px;
   }
   @media screen and(min-width:$tablet) {
     padding: 12px;
@@ -105,5 +146,5 @@
   width: 160px;
   display: flex;
   align-items: center;
-  border-right: 1px solid;
+  border-right: 1px solid #7eb101;
 }
