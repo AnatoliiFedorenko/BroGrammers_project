@@ -1,54 +1,53 @@
-.castomerSay{
-  // height: 768px;
-  // background-image: url(../images/customers-mobile/fon-480.1x.png);
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-}
+// .castomerSay{
+//   height: 768px;
+//   background-image: url(../images/customers-mobile/fon-480.1x.png);
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
 
-
-.castomer{
-  @media screen and(max-width:$tablet){
+.castomer {
+  @media screen and(max-width:$tablet) {
+    margin-top: -60px;
     padding-top: 60px;
     padding-bottom: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 768px;
-  background-image: url(../images/customers-mobile/fon-480.1x.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 768px;
+    background-image: url(../images/customers-mobile/fon-480.1x.png);
     background-position: center;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+  }
 
-  @media screen and(min-width:$tablet){
+  @media screen and(min-width:$tablet) {
     padding-top: 60px;
     padding-bottom: 60px;
     font-size: 42px;
-line-height: 49px;
-background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../images/customers-tablet/fon-tablet1x.png);
-  height: 544px;
-  margin-bottom: 80px;
+    line-height: 49px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/customers-tablet/fon-tablet1x.png);
+    height: 544px;
+    margin-bottom: 80px;
   }
-  
-  @media screen and(min-width:$desktop){
+
+  @media screen and(min-width:$desktop) {
     font-size: 42px;
-line-height: 49px;
-background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../images/customers-desctop/fon-desctop1x.png);
-  height: 647px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+    line-height: 49px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/customers-desctop/fon-desctop1x.png);
+    height: 647px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
-.castomer__title{
-    @extend %title;
-    text-align: start;
-    color: var(--primary-text-color);}
-  
-
-
+.castomer__title {
+  @extend %title;
+  text-align: start;
+  color: var(--primary-text-color);
+}
 
 .castomer__title {
   @extend %title;
@@ -141,11 +140,9 @@ background-position: center;
   }
 }
 
-
-.feedback__dude{
-    width: 160px;
-    display: flex;
-    align-items: center;
-    border-right: 1px solid #7EB101;}
-
-
+.feedback__dude {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #7eb101;
+}
