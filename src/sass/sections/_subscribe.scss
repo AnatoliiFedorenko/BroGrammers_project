@@ -55,17 +55,19 @@
   font-size: 14px;
   line-height: 16px;
 }
-.form {
+.form__subscribe {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: end;
+ 
   @media screen and(min-width:$tablet) {
     flex-direction: row;
+    align-items: baseline;
   }
 }
-.form .form__input {
+.form__subscribe .form__input {
   border: 0.854167px solid #ffe550;
+  font-size: 12px;
   @media screen and(min-width:$tablet) {
     width: 394px;
   }
@@ -73,6 +75,11 @@
   & :focus {
     border: 0.854167px solid #7eb101;
   }
+}
+.form__subscribe .button-form{
+    display: flex;
+    justify-content: end;
+    margin-top: -20px;
 }
 .form__button {
   display: flex;
