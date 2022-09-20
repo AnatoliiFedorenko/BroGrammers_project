@@ -64,7 +64,7 @@
   height: 280px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #fff;
+  // background-color: #fff;
   border-radius: 50%;
   border: 3px solid rgba(255, 255, 255, 0.5);
   box-shadow: inset 0 0 0 12px var(--yellow-main);
@@ -81,6 +81,25 @@
     width: 550px;
     height: 550px;
     margin-top: 0;
+  }
+
+  &::before {
+    position: absolute;
+    width: 255.55px;
+    height: 255.55px;
+    border-radius: 50%;
+    background: white;
+    content: '';
+
+    @media screen and (min-width: $tablet) {
+      width: 325.84px;
+      height: 325.84px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 502px;
+      height: 502px;
+    }
   }
 
   &::after {
