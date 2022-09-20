@@ -44,7 +44,7 @@
 
 .hero__desc-block {
   @media screen and (min-width: $tablet) {
-    max-width: 338px;
+    width: 338px;
   }
   @media screen and (min-width: $desktop) {
     width: 510px;

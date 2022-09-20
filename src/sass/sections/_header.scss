@@ -23,22 +23,23 @@
     display: none;
   }
 }
-.menu__item {
-  padding-top: 28px;
-  padding-bottom: 28px;
-  // &:not(:first-of-type) {
-  //   padding-left: 14px;
-  // }
-  // &:not(:last-of-type) {
-  //   padding-right: 14px;
-  // }
-}
+// .menu__item {
+//   &:not(:first-of-type) {
+//     padding-left: 14px;
+//   }
+//   &:not(:last-of-type) {
+//     padding-right: 14px;
+//   }
+// }
 
 .menu__item + .menu__item {
   margin-left: 28px;
 }
 
 .menu__link {
+  padding-top: 28px;
+  padding-bottom: 28px;
+
   text-decoration: none;
   @include font-size(400, 14px, 1.14);
   color: inherit;
