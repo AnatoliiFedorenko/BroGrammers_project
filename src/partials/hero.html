@@ -5,23 +5,21 @@
             <p class="hero__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
                 in eros elementum tristique. Duis
                 cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-            <button type="button" class="order-button">Order Now</button>
+            <button type="button" class="button__order" aria-label="Do order" data-open-modal>
+                Order Now
+            </button>
         </div>
         <div class="hero__image-block">
             <picture class="hero__picture">
                 <source srcset="
-                          ./images/food-mobile/food-mobile.png    1x,
-                          ./images/food-mobile/food-mobile@2x.png 2x
-                        " media="(max-width: 768px)" />
-                <source srcset="
-                          ./images/food-tablet/food-tablet-1.png    1x,
-                          ./images/food-tablet/food-tablet-1@2x.png 2x
+                          ./images/hero/food-tablet-1.png    1x,
+                          ./images/hero/food-tablet-1@2x.png 2x
                         " media="(min-width: 768px)" />
                 <source srcset="
-                          ./images/food-desktop/food-desktop.png    1x,
-                          ./images/food-desktop/food-desktop@2x.png 2x
+                          ./images/hero/food-desktop-1.png    1x,
+                          ./images/hero/food-desktop-1@2x.png 2x
                         " media="(min-width: 1200px)" />
-                <img class="hero__image" src="./images/food-mobile/food-mobile.png" alt="Food" />
+                <img class="hero__image" src="./images/hero/food-tablet-1.png" alt="Food" width="292"/>
             </picture>
         </div>
     </div>
