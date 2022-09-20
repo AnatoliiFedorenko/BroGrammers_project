@@ -1,0 +1,28 @@
+<section class="hero section">
+    <div class="hero__container container">
+        <div class="hero__desc-block">
+            <h1 class="hero__title title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+            <button type="button" class="order-button">Order Now</button>
+        </div>
+        <div class="hero__image-block">
+            <picture class="hero__picture">
+                <source srcset="
+                          ./images/food-mobile/food-mobile.png    1x,
+                          ./images/food-mobile/food-mobile@2x.png 2x
+                        " media="(max-width: 768px)" />
+                <source srcset="
+                          ./images/food-tablet/food-tablet-1.png    1x,
+                          ./images/food-tablet/food-tablet-1@2x.png 2x
+                        " media="(min-width: 768px)" />
+                <source srcset="
+                          ./images/food-desktop/food-desktop.png    1x,
+                          ./images/food-desktop/food-desktop@2x.png 2x
+                        " media="(min-width: 1200px)" />
+                <img class="hero__image" src="./images/food-mobile/food-mobile.png" alt="Food" />
+            </picture>
+        </div>
+    </div>
+</section>
