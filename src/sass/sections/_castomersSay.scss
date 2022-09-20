@@ -134,10 +134,12 @@
     width: 280px;
   }
   @media screen and(min-width:$tablet) {
-    padding: 12px;
+    width: 336px;
+    height: 244px;
   }
   @media screen and(min-width:$desktop) {
     width: 501px;
+    height: 227px;
     padding: 14px;
   }
 }
