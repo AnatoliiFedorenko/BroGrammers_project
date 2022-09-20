@@ -67,6 +67,7 @@
   text-align: center;
 }
 .form__label {
+  display: inline-block;
   @include font-size(500, 16px, 1.4);
   color: var(--primary-text-color);
   margin-bottom: 2px;
