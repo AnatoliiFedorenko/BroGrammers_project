@@ -1,13 +1,5 @@
-// .castomerSay{
-//   height: 768px;
-//   background-image: url(../images/customers-mobile/fon-480.1x.png);
-//     background-position: center;
-//     background-repeat: no-repeat;
-// }
-
-.castomer {
+.castomerSay {
   @media screen and(max-width:$tablet) {
-    margin-top: -60px;
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
@@ -18,7 +10,6 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-
   @media screen and(min-width:$tablet) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -40,6 +31,14 @@
     height: 647px;
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+}
+
+.castomer {
+  @media screen and(max-width:$tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -81,6 +80,9 @@
   line-height: 19px;
   color: var(--primary-text-color);
   margin-bottom: 40px;
+  @media screen and (max-width: 364px) {
+    margin-bottom: 15px;
+  }
   @media screen and(min-width:$tablet) {
     font-size: 18px;
     line-height: 21px;
