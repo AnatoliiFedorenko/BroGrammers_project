@@ -41,6 +41,15 @@
         @include flex($jc: space-between);
     }
 }
+
+.hero__desc-block{
+    @media screen and (min-width: $tablet) {
+            max-width: 338px;
+        }
+    @media screen and (min-width: $desktop) {
+        width: 510px;
+    }
+}
 .hero__title {
     margin-top: 60px;
     margin-bottom: 28px;
