@@ -31,11 +31,7 @@
 }
 
 .gallery-list__item {
-  border: 11px solid var(--yellow-main);
-  border-radius: 139.658px;
-  padding: 18.12px 17.35px;
   margin-bottom: 20px;
-  transition: border-color 250ms var(--cubik);
 
   width: 280px;
 
@@ -43,23 +39,12 @@
     margin-bottom: 0;
   }
 
-  &:hover,
-  &:focus {
-    border-color: #bbf330;
-  }
-
   @media screen and (min-width: $tablet) {
-    border: 14px solid var(--yellow-main);
-    border-radius: 167.59px;
-    padding: 20.91px 20.03px;
     margin-bottom: 0;
     flex-basis: calc((100% - 32px) / 2);
   }
 
   @media screen and (min-width: $desktop) {
-    border: 16px solid var(--yellow-main);
-    border-radius: 197px;
-    padding: 23px 23px;
     margin-bottom: 0;
     flex-basis: calc((100% - 64px) / 3);
   }
@@ -72,15 +57,27 @@
 }
 
 .gallery-list__photo {
-  border-radius: 116.323px;
+  border: 11px solid var(--yellow-main);
+  border-radius: 50%;
+  padding: 18px 17px;
+
+  transition: border-color 250ms var(--cubic);
 
   @media screen and (min-width: $tablet) {
-    border-radius: 133.648px;
+    border: 14px solid var(--yellow-main);
+    padding: 21px 20px;
   }
 
   @media screen and (min-width: $desktop) {
-    border-radius: 157.5px;
-    width: 315px;
-    height: 315px;
+    border: 16px solid var(--yellow-main);
+    padding: 23px 23px;
+
+    width: 395px;
+    height: 397px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #bbf330;
   }
 }
