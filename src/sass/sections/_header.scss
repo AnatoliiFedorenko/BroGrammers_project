@@ -45,7 +45,7 @@
   color: inherit;
 
   .menu__item:hover &,
-  .menu__item:focus & {
+  &:focus {
     color: var(--button-green);
     text-decoration: underline;
   }
