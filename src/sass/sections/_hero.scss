@@ -22,8 +22,10 @@
 
 .hero .button__order {
   margin-top: 28px;
+
   @media screen and(max-width: $tablet) {
     display: block;
+    margin-bottom: 50px;
   }
   @media screen and (min-width: $tablet) {
     max-width: 526px;
