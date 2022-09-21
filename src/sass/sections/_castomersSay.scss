@@ -121,9 +121,9 @@
     flex-direction: row;
     gap: 32px;
   }
-  @media screen and(min-width:$desktop) {
-    justify-content: space-between;
-  }
+  // @media screen and(min-width:$desktop) {
+  //   justify-content: space-between;
+  // }
 }
 
 .feedback__item {
@@ -142,6 +142,10 @@
     height: 227px;
     padding: 14px;
   }
+}
+
+.feedback__item + .feedback__item {
+  margin-left: 139px;
 }
 
 .feedback__dude {

@@ -79,8 +79,8 @@
     height: 397px;
   }
 
-  &:hover,
-  &:focus {
+  .gallery-list__link:hover &,
+  .gallery-list__link:focus & {
     border-color: #bbf330;
   }
 }

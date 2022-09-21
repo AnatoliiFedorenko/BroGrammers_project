@@ -29,15 +29,18 @@
     openModalBtn: document.querySelector('[data-open-modal]'),
     closeModalBtn: document.querySelector('[data-close-modal]'),
     backdrop: document.querySelector('[data-backdrop]'),
+    hero: document.querySelector('[data-hero]')
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   refs.backdrop.addEventListener('click', logBackdropClick);
+  refs.hero.addEventListener('click', toggleModal);
 
   function toggleModal() {
     document.body.classList.toggle('modal__open');
     refs.backdrop.classList.toggle('is__hidden');
+    // refs.hero.classList.toggle('modal__open');
   }
 })();
