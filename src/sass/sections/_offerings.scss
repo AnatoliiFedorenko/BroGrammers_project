@@ -277,7 +277,6 @@
 .offerings__order-btn {
   cursor: pointer;
   padding: 10px 22px;
-  // margin-right: 24px;
   color: var(--primary-text-color);
   background: #ffffff;
   @include font(14px, 500, 20px);
@@ -289,6 +288,9 @@
   &:hover,
   &:focus {
     border-color: #597d00;
+  }
+  @media screen and (max-width: $desktop) {
+    margin-right: 24px;
   }
 }
 
