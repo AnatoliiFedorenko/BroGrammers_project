@@ -98,6 +98,7 @@
     background-color: #fff;
     border-radius: 50%;
     border: 13px solid var(--yellow-main);
+    border-color: var(--yellow-main);
   }
 
   @media screen and (min-width: $desktop) {
@@ -107,7 +108,15 @@
     margin-top: 14px;
 
     border: 25px solid var(--yellow-main);
+    border-color: var(--yellow-main);
   }
+
+  &:hover,
+  &:focus {
+    border-color: var(--button-green);
+  }
+
+  transition: border-color 250ms var(--cubic);
 }
 
 .hero__image {
